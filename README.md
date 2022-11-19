@@ -8,7 +8,7 @@ Tiny lab for spyke purpose about  [`Keda`](https://keda.sh/)
 2. [`kubectl`](https://kubernetes.io/docs/tasks/tools/): docker cli
 3. [`minikube`](https://minikube.sigs.k8s.io/docs/): in order to apply against local [`kubernetes`](https://kubernetes.io/) environment
 4. [`yq`](https://github.com/mikefarah/yq): [`yaml`](https://en.wikipedia.org/wiki/YAML) parser
-5. [`jq`](https://stedolan.github.io/jq/download/)
+5. [`jq`](https://stedolan.github.io/jq/download/): json parser
 ---
 
 The lab is composed by:
