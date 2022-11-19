@@ -16,7 +16,7 @@ The lab is composed by:
 - Simple node application using  [`express`](https://www.npmjs.com/package/express) as rest srv along with [`express-prometheus-middleware`](https://www.npmjs.com/package/express-prometheus-middleware) for metrics
 - [`keda`](https://keda.sh/) itself
 
-**Main makefile targets:** \
+**Main makefile targets:** 
 
 Installing the whole stack
 ```bash
