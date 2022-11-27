@@ -1,6 +1,6 @@
 # Trying KEDA | Kubernetes Event-driven Autoscaling
 
-Tiny lab for spyke purpose about  [`Keda`](https://keda.sh/) 
+Tiny lab for spike purpose about  [`Keda`](https://keda.sh/) 
 
 ---
 ***Prerequisites:***
