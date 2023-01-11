@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: trying-keda-ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - pathType: Prefix
+        path: "/metrics"
+        backend:
+          service:
+            name: trying-keda-service
+            port:
+              number: 3000
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: trying-keda-service
+            port:
+              number: 3000
