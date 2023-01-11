@@ -363,7 +363,7 @@ scaledobject.keda.sh/prometheus-app-scaled-object created
 ```bash
 watch -n 0.01 curl -k -X GET http://localhost
 ```
-![image-001](./images_and_diagrams/image_001.gif) 
+![image-001](./images_and_diagrams/image_003.gif) 
 
 **In case we wish we can even have a look at the metric (i.e. `http_requests_total`) coming through:**
 ![image-002](./images_and_diagrams/image_002.png) 
