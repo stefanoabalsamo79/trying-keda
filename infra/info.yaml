@@ -1,0 +1,49 @@
+defaultClusterName: kind
+clusterName: test-cluster
+prometheusNamespace: default
+kedaNamespace: keda
+appNamespace: default
+appBaseImage: "node:18"
+
+ingress-nginx-controller: 
+  local: 
+    imageSrc: registry.k8s.io/ingress-nginx/controller:v1.5.1@sha256:4ba73c697770664c1e00e9f968de14e08f606ff961c76e5d7033a4a9c593c629
+    imageDest: ingress-nginx-controller
+    imageTagDest: 1.5.1
+
+kube-webhook-certgen: 
+  local: 
+    imageSrc: registry.k8s.io/ingress-nginx/kube-webhook-certgen:v20220916-gd32f8c343@sha256:39c5b2e3310dc4264d638ad28d9d1d96c4cbb2b2dcfb52368fe4e3c63f61e10f
+    imageDest: kube-webhook-certgen
+    imageTagDest: 20220916-gd32f8c343
+
+keda-metrics-apiserver: 
+  local: 
+    imageSrc: ghcr.io/kedacore/keda-metrics-apiserver:2.8.0
+    imageDest: keda-metrics-apiserver
+    imageTagDest: 2.8.0
+
+keda: 
+  local: 
+    imageSrc: ghcr.io/kedacore/keda:2.8.0
+    imageDest: keda
+    imageTagDest: 2.8.0
+
+
+prometheus-config-reloader: 
+  local: 
+    imageSrc: quay.io/prometheus-operator/prometheus-config-reloader:v0.62.0
+    imageDest: prometheus-config-reloader
+    imageTagDest: 0.62.0
+
+prometheus-operator: 
+  local: 
+    imageSrc: quay.io/prometheus-operator/prometheus-operator:v0.62.0
+    imageDest: prometheus-operator
+    imageTagDest: 0.62.0
+
+prometheus: 
+  local: 
+    imageSrc: quay.io/prometheus/prometheus:v2.22.1
+    imageDest: prometheus
+    imageTagDest: 2.22.1

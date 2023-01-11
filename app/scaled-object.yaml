@@ -12,7 +12,7 @@ spec:
   triggers:
     - type: prometheus
       metadata:
-        serverAddress: http://10.99.24.45:9090
+        serverAddress: http://10.96.180.178:9090
         metricName: http_requests_total
         threshold: '2'
         query: sum(rate(http_requests_total[1m]))
